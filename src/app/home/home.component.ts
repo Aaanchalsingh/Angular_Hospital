@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ScrollDispatcher, CdkScrollable } from '@angular/cdk/scrolling';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
