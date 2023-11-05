@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es6",
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -16,11 +16,14 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "module": "ES6",
+    "module": "es6",
     "useDefineForClassFields": false,
     "lib": [
-      "ES6",
+      "es6",
       "dom"
+    ],
+    "types": [
+      "jquery"
     ]
   },
   "angularCompilerOptions": {

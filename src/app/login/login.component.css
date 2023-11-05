@@ -1,4 +1,3 @@
-/* Add any other global CSS styles here */
 .contact {
   margin-left: 20vw;
   margin-top: 10vh;
@@ -7,27 +6,28 @@
   height: 100%;
   overflow-x:hidden ;
 }
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
 
-.container {
+.container1 {
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   overflow: hidden;
-  width: 60%;
+  width: 65%;
   padding: 5%;
 }
 .cont{
   display: flex;
-  font-size: 1rem;
+  font-family: Agbalumo;
+  font-size: 1.2rem;
+  color: #0f053d;
+  font-weight: 900;
   text-align: left;
   flex-direction: column;
 }
-.cont h1{
-  margin-right: 10%;
-}
 
-.container img {
+.container1 img {
   height: 250px;
   width: 400px;
   margin-right: 12px;
