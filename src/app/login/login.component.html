@@ -15,16 +15,14 @@
           <form>
             <input
               id="name"
-              name="name"
               type="text"
               placeholder="Name"
               class="rounded-md mb-6 p-3 border border-black"
             />
-            <input id="email" name="email" type="text" placeholder="Email" />
-            <input id="phone" name="phone" type="text" placeholder="Phone" />
+            <input id="email" type="text" placeholder="Email" />
+            <input id="phone" type="text" placeholder="Phone" />
             <textarea
               id="message"
-              name="message"
               cols="30"
               rows="5"
               placeholder="Message"
@@ -81,16 +79,16 @@
     <script>
       $(document).ready(function () {
         console.log("Document ready event executed.");
-        // $("#submit-button").click(function (e) {
-        //   var name = $("#name").val();
-        //   var email = $("#email").val();
-        //   var phone = $("#phone").val();
-        //   var message = $("#message").val();
-        //   console.log("Name: " + name);
-        //   console.log("Email: " + email);
-        //   console.log("Phone: " + phone);
-        //   console.log("Message: " + message);
-        // });
+        $("#submit-button").click(function (e) {
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var phone = $("#phone").val();
+          var message = $("#message").val();
+          console.log("Name: " + name);
+          console.log("Email: " + email);
+          console.log("Phone: " + phone);
+          console.log("Message: " + message);
+        });
       });
     </script>
   </body>
