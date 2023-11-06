@@ -28,11 +28,11 @@
               </div>
               <nav>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#about">About us</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#gal">Gallery</a></li>
-                  <li><a href="#Contact">Book Appointment</a></li>
+                  <li><a (click)="scrollTo('home')">Home</a></li>
+                  <li><a (click)="scrollTo('about')">About us</a></li>
+                  <li><a (click)="scrollTo('services')">Services</a></li>
+                  <li><a (click)="scrollTo('gal')">Gallery</a></li>
+                  <li><a (click)="scrollTo('Contact')">Book Appointment</a></li>
                 </ul>
               </nav>
             </div>
@@ -102,35 +102,42 @@
         <div class="about-box">
           <div>
             <h2>Best Medical & Health care Needs to Our Patients</h2>
-            <p>
-              we provide the best medicines the benefits of medicines are the
-              helpful effects you get when you use them,such as lowering blood
-              pressure,curing infection, or relieving pain.
+            <p style="margin-top: 3%;">
+              At ClinicConnect, our mission is to provide the best medical and healthcare solutions to meet the diverse needs of our valued patients.We take pride in our state-of-the-art facilities and cutting-edge technology, which enable us to offer accurate diagnostics and effective treatments.
             </p>
-            <br />
             <p>
-              the risks of medicines are the chances that something unwanted or
-              unexpected could happen to you when you use them, that's why each
-              and everything is controled in a proper mannar and maintained.
+              We prioritize your well-being and ensure that you receive personalized, compassionate, and top-notch medical care
             </p>
-            <br />
             <p>
-              we provide the best medicines the benefits of medicines are the
-              helpful effects you get when you use them,such as lowering blood
-              pressure,curing infection, or relieving pain.
+              Your health is our priority, and we strive to ensure your journey to recovery is seamless and comfortable. Trust ClinicConnect for your medical and healthcare needs.
             </p>
-            <br />
             <p>
-              we provide the best medicines the benefits of medicines are the
-              helpful effects you get when you use them,such as lowering blood
-              pressure,curing infection, or relieving pain.
+              Our dedicated team of experienced healthcare professionals is committed to delivering a wide range of services, from preventive care to specialized treatments, in a safe and nurturing environment.
             </p>
-            <br />
           </div>
           <div>
             <img src="../../assets/5.jpg" width="100%" style="border-radius: 20px;" />
           </div>
         </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("nav ul li a");
+
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
